@@ -2,42 +2,50 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Drag Race!</title>
+	<title>Drag Race - Christian Chandler WDI-16 Week 2 Lab</title>
   <link rel="stylesheet" href="css/normalize.css" media="all">
   <link rel="stylesheet" href="css/main.css" media="all">
 </head>
 <body>
+  <div id="instructions">
+    <h3>Instructions:</h3>
+    <p>To play the game, you first start your car by pressing the "enter" key. Now that the engine is running, you press the "right arrow" key to advance your car to the stagging area but, don't do over the line or you will foul and loose the race.</p>
+    <p>Once your car is in the stagging area, the "Christmas tree" lights will start the race's countdown. There are 3 "get ready" lights. The fourth is "GO!"</p>
+    <p>If you pass the start line before the "GO!" lights illuminate, you will foul and the 5th set of lights will show red indicating you lost the race.</p>
+    <p>On your mark, get set, good luck racing!</p>
+    <p>To start another race, press the "r" key or click the "Restart" button.</p>
+  </div>
   <div id="christmas-tree" class="center">
-    pre-stage
+    Pre-Stage
     <div id="pre-stage" class="lights">
       <div></div><div></div>
       <div></div><div></div>
     </div>
-    stage
+    Stage
     <div id="stage" class="lights">
       <div></div><div></div>
       <div></div><div></div>
     </div>
-    <div id="start-lights" class="lights">
+    <div class="start lights1 lights">
       <div></div><div></div>
     </div>
-    <div id="start-lights" class="lights">
+    <div class="start lights2 lights">
       <div></div><div></div>
     </div>
-    <div id="start-lights" class="lights">
+    <div class="start lights3 lights">
       <div></div><div></div>
     </div>
-    <div id="start-lights" class="lights">
+    <div class="start lights4 lights">
       <div></div><div></div>
     </div>
-    <div id="start-lights" class="lights">
+    <div class="lights foul">
       <div></div><div></div>
     </div>
     </div>
   </div>
   <div id="racetrack" class="center">
     <div class="abs" id="strip">
-      <div id="dragster" class="abs"></div>
+      <div id="dragster" class="abs"><span id="exhaust"></span></div>
       <div id="pre-staged" class="place abs"></div>
       <div id="staged" class="place abs"></div>
       <div id="start" class="abs"></div>

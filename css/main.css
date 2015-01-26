@@ -1,4 +1,21 @@
 /******* GENERAL ******/
+body {
+  background-color: #b2b2cc;
+  background-image: url(../images/trackBkg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#instructions {
+  width: 800px;
+  position: absolute;
+  left: 10px;
+  top: -10px;
+}
+#instructions p {
+  margin: 0;
+  padding-top: 3px;
+}
+
 .center {
   margin: 0 auto;
 }
@@ -15,7 +32,7 @@
   color: white;
   text-align: center;
   font-size: 0.9em;
-  border: 4px solid #ccc;
+  border: 3px solid #800000;
 }
 
 .lights {
@@ -27,62 +44,76 @@
   background: white;
 }
 
+.lights:last-child {
+  border-bottom: none;
+}
+
 #pre-stage div, #stage div {
   width: 10px;
   height: 10px;
   border-radius: 5px;
 }
 
-#pre-stage.on div {
-  background: yellow;
-}
-
-#start-lights div {
+.start div, .foul div {
   width: 20px;
   height: 20px;
   border-radius: 10px;
+}
+
+#pre-stage.on div, #stage.on div, #lights1.on div, #lights2.on div, #lights3.on div {
+  background: yellow;
+}
+
+.lights4.on div {
+  background: green;
+}
+
+.foul.on div {
+  background: red;
 }
 
 /******* RACETRACK ******/
 #racetrack {
   background: green;
   width: 90%;
-  height: 88px;
+  height: 150px;
   border: 2px solid black;
 }
 
 #strip {
   width: inherit;
-  height: 88px;
+  height: 150px;
 }
 
 .place {
-  height: 88px;
-  width: 10px;
-  min-height: 88px;
-  min-width: 10px;
+  height: 150px;
+  width: 20px;
+  min-height: 150px;
+  min-width: 20px;
 }
 
 #pre-staged {
-  left: 39px;
+  left: 60px;
   background: yellow;
 }
 
 #finish {
   right: 49px;
   background: white;
+  background-image: url(../images/finishlinecheck.png);
+  background-repeat: no-repeat;
 }
 
 #staged {
-  left: 93px;
+  left: 123px;
   background: yellow;
 }
 
 #dragster {
   background: url(../images/mario.png) no-repeat;
-  background-size: 39px 44px;
-  width: 39px;
-  height: 44px;
-  top: 20px;
+  background-size: 49px 54px;
+  width: 49px;
+  height: 54px;
+  top: 50px;
   z-index: 100;
 }
